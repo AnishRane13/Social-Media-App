@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .gradient {
+            background: linear-gradient(90deg, #9333ea 0%, #4e44ce 100%);
+        }
+        .neon {
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 flex items-center justify-center h-screen relative">
+    <div class="text-center z-10">
+        <!-- Logo -->
+        <img src="https://online-communities.demos.buddyboss.com/wp-content/mu-plugins/buddyboss-sandbox-addon/assets/img/bb-logo.png?ver=2" alt="Logo" class="mx-auto h-16 mb-6 invert">
+
+        <!-- Heading -->
+        <h1 class="text-4xl font-bold text-white mb-6 neon">Online Communities</h1>
+
+        <!-- Button -->
+        <a href="#" id="joinButton" class="inline-block gradient text-white font-bold py-3 px-6 rounded-full shadow-md hover:shadow-lg transition-shadow duration-300 mb-6 neon">
+            Join Now
+        </a>
+    </div>
+
+    <!-- Visual Elements -->
+    <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute top-0 left-0 h-20 w-20 bg-purple-300 rounded-full blur-3xl opacity-50 animate-pulse"></div>
+        <div class="absolute bottom-0 right-0 h-16 w-16 bg-indigo-300 rounded-full blur-2xl opacity-50 animate-pulse"></div>
+        <div class="absolute top-0 right-0 h-24 w-24 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-full blur-xl opacity-75 animate-spin"></div>
+    </div>
+
+    <script>
+        document.getElementById("joinButton").addEventListener("click", function(event) {
+            event.preventDefault();
+            document.getElementById("joinButton").innerHTML = "Loading...";
+            setTimeout(function() {
+                window.location.href = "https://example.com/new-page";
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
+    <!-- <script>
+        document.getElementById("joinButton").addEventListener("click", function(event) {
+            event.preventDefault();
+            document.getElementById("joinButton").innerHTML = "Loading...";
+            setTimeout(function() {
+                window.location.href = "https://example.com/new-page";
+            }, 2000);
+        });
+    </script> -->
