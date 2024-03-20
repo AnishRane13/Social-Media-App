@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media App - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .dark-mode {
+            background-color: #1a202c;
+            color: #cbd5e0;
+        }
+        .dark-mode a {
+            color: #cbd5e0;
+        }
+    </style>
+</head>
+<body class="dark-mode">
+    <!-- Header -->
+    <header class="bg-gray-900 shadow-lg">
+        <nav class="container mx-auto px-4 py-3 flex items-center justify-between">
+            <a href="#" class="flex items-center">
+                <img src="https://online-communities.demos.buddyboss.com/wp-content/mu-plugins/buddyboss-sandbox-addon/assets/img/bb-logo.png?ver=2" alt="Logo" class="h-10 mr-2 invert">
+            </a>
+            <div>
+                <a href="#" class="text-gray-300 hover:text-white mx-2">Home</a>
+                <a href="#" class="text-gray-300 hover:text-white mx-2">Explore</a>
+                <a href="#" class="text-gray-300 hover:text-white mx-2">Profile</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Trending Topics -->
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-300 mb-4">Trending Topics</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="bg-gray-800 rounded-lg shadow-lg p-4">
+                    <h3 class="text-lg font-bold text-gray-200 mb-2">#TechTrends</h3>
+                    <p class="text-gray-400">Stay updated with the latest technology trends.</p>
+                </div>
+                <div class="bg-gray-800 rounded-lg shadow-lg p-4">
+                    <h3 class="text-lg font-bold text-gray-200 mb-2">#FoodiesUnite</h3>
+                    <p class="text-gray-400">Discover new recipes and share your culinary adventures.</p>
+                </div>
+                <div class="bg-gray-800 rounded-lg shadow-lg p-4">
+                    <h3 class="text-lg font-bold text-gray-200 mb-2">#FitnessMotivation</h3>
+                    <p class="text-gray-400">Join the fitness community and stay motivated.</p>
+                </div>
+                <div class="bg-gray-800 rounded-lg shadow-lg p-4">
+                    <h3 class="text-lg font-bold text-gray-200 mb-2">#TravelDiaries</h3>
+                    <p class="text-gray-400">Explore the world through the eyes of fellow travelers.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Posts -->
+        <section>
+            <h2 class="text-2xl font-bold text-gray-300 mb-4">Popular Posts</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="bg-gray-800 rounded-lg shadow-lg p-4">
+                    <div class="flex items-center mb-4">
+                        <img src="https://online-communities.demos.buddyboss.com/wp-content/mu-plugins/buddyboss-sandbox-addon/assets/img/bb-logo.png?ver=2" alt="Profile Picture" class="w-10 h-10 rounded-full mr-4">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-200">John Doe</h3>
+                            <p class="text-gray-400">12 minutes ago</p>
+                        </div>
+                    </div>
+                    <img src="https://source.unsplash.com/random/800x600" alt="Post Image" class="w-full h-48 object-cover rounded mb-4">
+                    <div class="flex justify-between">
+                        <div>
+                            <button class="text-gray-400 hover:text-gray-200 mr-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5l1 1m0 0l1-1m-1 1v14m-4-5H7a5 5 0 0 0-5 5v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1a5 5 0 0 0-5-5z" />
+                                </svg>
+                            </button>
+                            <button class="text-gray-400 hover:text-gray-200 mr-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l-2 2m0 0l-2-2m2 2V5m7 14h-2a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5h2a5 5 0 0 1 5 5v12a5 5 0 0 1-5 5z" />
+                                </svg>
+                            </button>
+                            <button class="text-gray-400 hover:text-gray-200">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                                </svg>
+                            </button>
+                        </div>
+                        <a href="#" class="text-indigo-400 hover:text-indigo-300">Read More</a>
+                    </div>
+                </div>
+                <!-- Add more post elements similarly -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="container mx-auto px-4">
+            <p class="text-center">&copy; 2023 Social App. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
