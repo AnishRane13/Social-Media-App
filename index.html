@@ -12,6 +12,22 @@
         .neon {
             text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
         }
+        .spinner {
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid #ffffff;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            animation: spin 1s linear infinite;
+            display: inline-block;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
     </style>
 </head>
 <body class="bg-gray-900 flex items-center justify-center h-screen relative overflow-hidden">
@@ -38,7 +54,11 @@
     <script>
         document.getElementById("joinButton").addEventListener("click", function(event) {
             event.preventDefault();
-            document.getElementById("joinButton").innerHTML = "Loading...";
+            var joinButton = document.getElementById("joinButton");
+            joinButton.innerHTML = "Loading...";
+            var spinner = document.createElement("span");
+            spinner.classList.add("spinner");
+            joinButton.appendChild(spinner);
             setTimeout(function() {
                 window.location.href = "home.html";
             }, 2000);
@@ -47,5 +67,3 @@
     
 </body>
 </html>
-
-  
